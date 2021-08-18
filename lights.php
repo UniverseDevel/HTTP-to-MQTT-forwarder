@@ -33,8 +33,6 @@ if (@$_GET['c'] == 'l_g1_t') {
         $mqtt->publish('shellies/shellycolorbulb/living/1/03x01/color/0/set', $message, 0);
         $mqtt->publish('shellies/shellycolorbulb/living/1/04x01/color/0/set', $message, 0);
         $mqtt->close();
-
-        // TODO: return some value so button is happy? https://shelly-api-docs.shelly.cloud/gen1/#local-actions
     } else {
         echo 'Error connecting to MQTT broker.<br>';
     }
@@ -68,8 +66,6 @@ if (@$_GET['c'] == 'l_g1_t') {
         $mqtt->publish('shellies/shellycolorbulb/living/2/04x02/color/0/set', $message, 0);
         $mqtt->publish('shellies/shellycolorbulb/living/2/04x03/color/0/set', $message, 0);
         $mqtt->close();
-
-        // TODO: return some value so button is happy? https://shelly-api-docs.shelly.cloud/gen1/#local-actions
     } else {
         echo 'Error connecting to MQTT broker.<br>';
     }
