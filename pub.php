@@ -20,7 +20,7 @@ require('configuration.php');
 $mqtt = new Bluerhinos\phpMQTT($MQTT_HOST, $MQTT_PORT, 'mqtt-forward-php_'.rand());
 $mqtt->debug = true;
 if ($mqtt->connect(true, null, $MQTT_USERNAME, $MQTT_PASSWORD)) {
-    $mqtt->publish('testtopic', 'test message 1', 2);
+    $mqtt->publish('testtopic', 'test message 1', 1);
     $mqtt->close();
 } else {
     echo 'Error connecting to MQTT broker.<br>';
