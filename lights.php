@@ -47,7 +47,7 @@ if (@$_GET['c'] == 'l_g1_t') {
     "white": 0,
     "temp": 3000,
     "effect": 0,
-    "turn": "toggle"
+    "turn": "on"
 }';
 
     $mqtt = new Bluerhinos\phpMQTT($MQTT_HOST, $MQTT_PORT, 'mqtt-forward-php_'.rand());
@@ -113,7 +113,7 @@ if (@$_GET['c'] == 'l_g1_t') {
     "white": 0,
     "temp": 3000,
     "effect": 0,
-    "turn": "toggle"
+    "turn": "on"
 }';
 
     $mqtt = new Bluerhinos\phpMQTT($MQTT_HOST, $MQTT_PORT, 'mqtt-forward-php_'.rand());
